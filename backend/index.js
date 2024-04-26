@@ -19,6 +19,9 @@ mongoose.connect("mongodb+srv://hgoutam2001:deploy@cluster0.dvwuj0d.mongodb.net/
 }).then(() => {
     console.log("db connected");
 })
+route.get("/",(req,res)=>{
+    console.log("backend")
+})
 route.use("/api", require('./name.js'))
 route.listen(5000, () => {
     console.log("port connected")
