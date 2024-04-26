@@ -7,7 +7,8 @@ function App() {
     const fun = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch("https://to-deploy-2.onrender.com/api/name", {
+         
+            const res = await fetch("https://to-deploy-3.onrender.com/api/name", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name: name })
